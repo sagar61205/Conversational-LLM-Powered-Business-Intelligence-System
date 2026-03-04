@@ -409,7 +409,7 @@
   <div class="hero">
     <div class="badge">🤖 GenAI · LLM Application Engineering · Pre-Production</div>
     <h1>Conversational LLM-Powered Business Intelligence System<br/>Intelligence System</h1>
-    <p class="subtitle">Conversational data access over 3 major BigQuery databases using Gemini 2.5 Pro — enabling business users to query complex enterprise data with plain English, no SQL required.</p>
+    <p class="subtitle">Conversational data access over 3 major BigQuery databases using Gemini 2.5 Pro enabling business users to query complex enterprise data with plain English, no SQL required.</p>
     <div class="tech-tags">
       <span class="tech-tag">Gemini 2.5 Pro / Flash</span>
       <span class="tech-tag">GCP Vertex AI</span>
@@ -426,7 +426,7 @@
   <div class="status-bar">
     <div class="status-dot"></div>
     <div>
-      <div class="status-text">Pre-Production — Pipeline Validated End-to-End</div>
+      <div class="status-text">Pre-Production Pipeline Validated End-to-End</div>
       <div class="status-sub">Full pipeline operational on Vertex AI Workbench · JSON data models loaded from GCS · Prompt evaluation in progress</div>
     </div>
   </div>
@@ -439,7 +439,7 @@
     </div>
     <div class="metric-card">
       <div class="val">2.5</div>
-      <div class="label">Gemini Pro/Flash — Frontier LLM</div>
+      <div class="label">Gemini Pro/Flash - Frontier LLM</div>
     </div>
     <div class="metric-card">
       <div class="val">E2E</div>
@@ -458,8 +458,8 @@
   <!-- PROBLEM -->
   <div class="section">
     <h2>🎯 Problem Statement</h2>
-    <p class="prose">The organisation manages critical business data across three separate BigQuery databases — product, customer, and sales/operations — each with its own schema and no shared query layer. Getting answers to cross-functional business questions required raising requests to the data or engineering team, translating requirements into SQL, and waiting for results. This created a dependency that slowed down day-to-day decisions.</p>
-    <p class="prose">The goal was to build a single conversational interface where any business user could ask a question in plain English and get accurate, structured results directly from the data — with no SQL knowledge required and no analyst in the loop.</p>
+    <p class="prose">The organisation manages critical business data across three separate BigQuery databases product, customer, and sales/operations each with its own schema and no shared query layer. Getting answers to cross-functional business questions required raising requests to the data or engineering team, translating requirements into SQL, and waiting for results. This created a dependency that slowed down day-to-day decisions.</p>
+    <p class="prose">The goal was to build a single conversational interface where any business user could ask a question in plain English and get accurate, structured results directly from the data with no SQL knowledge required and no analyst in the loop.</p>
   </div>
 
   <!-- ARCHITECTURE -->
@@ -527,11 +527,11 @@
         <div class="cs-row">
           <div class="cs-challenge">
             <div class="cs-label challenge-label">🔴 Challenge</div>
-            <div class="cs-text"><strong>Multi-database schema context</strong> — 3 BigQuery databases with distinct schemas must be passed to the LLM accurately without exceeding context limits.</div>
+            <div class="cs-text"><strong>Multi-database schema context</strong> 3 major BigQuery databases with distinct schemas must be passed to the LLM accurately without exceeding context limits.</div>
           </div>
           <div class="cs-solution">
             <div class="cs-label solution-label">✅ Solution</div>
-            <div class="cs-text">Structured JSON data models per database with <strong>selective schema injection</strong> based on query intent — only relevant tables/columns included in the LLM context window.</div>
+            <div class="cs-text">Structured JSON data models per database with <strong>selective schema injection</strong> based on query intent only relevant tables/columns included in the LLM context window.</div>
           </div>
         </div>
       </div>
@@ -540,11 +540,11 @@
         <div class="cs-row">
           <div class="cs-challenge">
             <div class="cs-label challenge-label">🔴 Challenge</div>
-            <div class="cs-text"><strong>Cross-database entity relationships</strong> — product and customer data spread across databases with implicit join logic the LLM must understand.</div>
+            <div class="cs-text"><strong>Cross-database entity relationships</strong> product and customer data spread across databases with implicit join logic the LLM must understand.</div>
           </div>
           <div class="cs-solution">
             <div class="cs-label solution-label">✅ Solution</div>
-            <div class="cs-text"><strong>JSON data models stored in GCS</strong> and loaded at inference time — encoding schema, foreign key relationships, business-level field definitions, and product-customer entity mappings across all three datasets.</div>
+            <div class="cs-text"><strong>JSON data models stored in GCS</strong> and loaded at inference time encoding schema, foreign key relationships, business-level field definitions, and product-customer entity mappings across all three datasets.</div>
           </div>
         </div>
       </div>
@@ -553,11 +553,11 @@
         <div class="cs-row">
           <div class="cs-challenge">
             <div class="cs-label challenge-label">🔴 Challenge</div>
-            <div class="cs-text"><strong>SQL correctness</strong> — LLM-generated SQL must be syntactically valid for BigQuery dialect and semantically correct for the question asked.</div>
+            <div class="cs-text"><strong>SQL correctness</strong> LLM-generated SQL must be syntactically valid for BigQuery dialect and semantically correct for the question asked.</div>
           </div>
           <div class="cs-solution">
             <div class="cs-label solution-label">✅ Solution</div>
-            <div class="cs-text"><strong>Prompt engineering</strong> with few-shot SQL examples, BigQuery-specific constraints, and structured output formatting — validated over a 2-week evaluation cycle.</div>
+            <div class="cs-text"><strong>Prompt engineering</strong> with few-shot SQL examples, BigQuery-specific constraints, and structured output formatting validated over a 2-week evaluation cycle.</div>
           </div>
         </div>
       </div>
@@ -583,18 +583,18 @@
     <h2>💡 What Makes This Different</h2>
     <div class="card-grid">
       <div class="card">
-        <h4>Frontier Model — Gemini 2.5 Pro/Flash</h4>
+        <h4>Frontier Model - Gemini 2.5 Pro/Flash</h4>
         <ul class="bullet-list">
           <li>Built on Google's latest frontier model, running natively on Vertex AI</li>
           <li>Superior code generation and multi-step reasoning for complex SQL</li>
-          <li>Not an OpenAI wrapper — fully within the GCP ecosystem</li>
+          <li>Not an OpenAI wrapper fully within the GCP ecosystem</li>
         </ul>
       </div>
       <div class="card v2">
         <h4>Multi-Schema Context Management</h4>
         <ul class="bullet-list">
           <li>Handles 3 production databases with distinct schemas simultaneously</li>
-          <li>Selective schema injection — only relevant tables sent to the LLM per query</li>
+          <li>Selective schema injection only relevant tables sent to the LLM per query</li>
           <li>Cross-entity relationships understood across database boundaries</li>
         </ul>
       </div>
@@ -602,7 +602,7 @@
         <h4>GCS-Backed JSON Data Models</h4>
         <ul class="bullet-list">
           <li>JSON data models for all 3 datasets stored in GCS, loaded at inference</li>
-          <li>Encode business semantics — field definitions, entity types, join logic</li>
+          <li>Encode business semantics field definitions, entity types, join logic</li>
           <li>LLM generates SQL reflecting actual business logic, not just table structure</li>
           <li>Product and customer data relationships explicitly mapped across databases</li>
         </ul>
@@ -610,7 +610,7 @@
       <div class="card v2">
         <h4>Full-Stack, Production-Bound</h4>
         <ul class="bullet-list">
-          <li>FastAPI backend + chat UI frontend — not a notebook or demo</li>
+          <li>FastAPI backend + chat UI frontend not a notebook or demo</li>
           <li>Hosted on Vertex Workbench, architected for production migration</li>
           <li>Every component independently deployable and scalable</li>
         </ul>
@@ -728,14 +728,14 @@
         <h4>⚡ Faster Decision Velocity</h4>
         <ul class="bullet-list">
           <li>Data questions answered in seconds, not hours or days</li>
-          <li>No ticket queue — results returned directly in the interface</li>
+          <li>No ticket queue results returned directly in the interface</li>
           <li>Frees analyst time for higher-value, non-routine work</li>
         </ul>
       </div>
       <div class="card">
         <h4>🏢 Enterprise-Grade Scalability</h4>
         <ul class="bullet-list">
-          <li>Built on Vertex AI and BigQuery — scales with GCP infrastructure</li>
+          <li>Built on Vertex AI and BigQuery scales with GCP infrastructure</li>
           <li>Designed for production deployment, not just internal tooling</li>
           <li>Data models in GCS make it easy to extend to new datasets</li>
         </ul>

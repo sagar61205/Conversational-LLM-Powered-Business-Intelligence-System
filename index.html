@@ -526,11 +526,11 @@
       <div class="cs-item">
         <div class="cs-row">
           <div class="cs-challenge">
-            <div class="cs-label challenge-label">🔴 Challenge</div>
+            <div class="cs-label challenge-label">Challenge</div>
             <div class="cs-text"><strong>Multi-database schema context</strong> 3 major BigQuery databases with distinct schemas must be passed to the LLM accurately without exceeding context limits.</div>
           </div>
           <div class="cs-solution">
-            <div class="cs-label solution-label">✅ Solution</div>
+            <div class="cs-label solution-label">Solution</div>
             <div class="cs-text">Structured JSON data models per database with <strong>selective schema injection</strong> based on query intent only relevant tables/columns included in the LLM context window.</div>
           </div>
         </div>
@@ -539,11 +539,11 @@
       <div class="cs-item">
         <div class="cs-row">
           <div class="cs-challenge">
-            <div class="cs-label challenge-label">🔴 Challenge</div>
+            <div class="cs-label challenge-label">Challenge</div>
             <div class="cs-text"><strong>Cross-database entity relationships</strong> product and customer data spread across databases with implicit join logic the LLM must understand.</div>
           </div>
           <div class="cs-solution">
-            <div class="cs-label solution-label">✅ Solution</div>
+            <div class="cs-label solution-label">Solution</div>
             <div class="cs-text"><strong>JSON data models stored in GCS</strong> and loaded at inference time encoding schema, foreign key relationships, business-level field definitions, and product-customer entity mappings across all three datasets.</div>
           </div>
         </div>
@@ -552,11 +552,11 @@
       <div class="cs-item">
         <div class="cs-row">
           <div class="cs-challenge">
-            <div class="cs-label challenge-label">🔴 Challenge</div>
+            <div class="cs-label challenge-label">Challenge</div>
             <div class="cs-text"><strong>SQL correctness</strong> LLM-generated SQL must be syntactically valid for BigQuery dialect and semantically correct for the question asked.</div>
           </div>
           <div class="cs-solution">
-            <div class="cs-label solution-label">✅ Solution</div>
+            <div class="cs-label solution-label">Solution</div>
             <div class="cs-text"><strong>Prompt engineering</strong> with few-shot SQL examples, BigQuery-specific constraints, and structured output formatting validated over a 2-week evaluation cycle.</div>
           </div>
         </div>
@@ -565,11 +565,11 @@
       <div class="cs-item">
         <div class="cs-row">
           <div class="cs-challenge">
-            <div class="cs-label challenge-label">🔴 Challenge</div>
-            <div class="cs-text"><strong>Full-stack orchestration</strong> — connecting chat UI → FastAPI → Vertex AI → BigQuery → formatted response in a coherent, low-latency flow.</div>
+            <div class="cs-label challenge-label">Challenge</div>
+            <div class="cs-text"><strong>Full-stack orchestration</strong> connecting chat UI → FastAPI → Vertex AI → BigQuery → formatted response in a coherent, low-latency flow.</div>
           </div>
           <div class="cs-solution">
-            <div class="cs-label solution-label">✅ Solution</div>
+            <div class="cs-label solution-label">Solution</div>
             <div class="cs-text"><strong>FastAPI async endpoints</strong> handling LLM calls and BigQuery execution in sequence, with streaming response rendering for perceived performance.</div>
           </div>
         </div>
@@ -691,7 +691,7 @@
   <!-- EVALUATION -->
   <div class="section">
     <h2>📏 Evaluation Approach</h2>
-    <p class="prose">The system is currently going through a structured prompt evaluation cycle, testing different strategies across a representative set of real business queries. The focus is on SQL correctness, cross-database join accuracy, and response quality — results will determine the final prompt design before production deployment.</p>
+    <p class="prose">The system is currently going through a structured prompt evaluation cycle, testing different strategies across a representative set of real business queries. The focus is on SQL correctness, cross-database join accuracy, and response quality results will determine the final prompt design before production deployment.</p>
     <div class="eval-grid">
       <div class="eval-card">
         <div class="e-title">SQL Accuracy</div>
